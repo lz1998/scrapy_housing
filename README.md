@@ -14,9 +14,12 @@
 - `scrapyd` 启动[服务器](http://localhost:6800)，端口：6800
 - `curl http://localhost:6800/schedule.json -d project=default -d spider=lianjia_spider` 启动爬虫
 - `curl http://localhost:6800/cancel.json -d project=default -d job=jobid_responsed_by_server` 停止爬虫
+- `logparser` 用logparser来解析log文件，提供统计信息，在`./logs/`下会出现`stats.json`
 
 
 #### 使用scrapyweb
+- `pip install logparser`
+- `vim ~/anaconda3/lib/python3.6/site-packages/logparser/settings.py`，修改29行`SCRAPYD_LOGS_DIR = '/Users/somebody/PycharmProjects/scrapy_housing/logs/'`，确保log文件记录在当前scrapyd项目下。注意：必须写成'/Users/somebody/...'而不能写'~/...'，具体原因还不知道。
 - `pip install scrapydweb`
 - `scrapydweb -ss 127.0.0.1:6800`
 - `scrapydweb`
