@@ -1,4 +1,7 @@
 .idea
+/logs/
+twistd.pid
+dbs/
 
 .DS_Store
 /evaluate/YGT/cache/
