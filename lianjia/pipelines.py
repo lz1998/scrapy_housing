@@ -72,7 +72,7 @@ class LianjiaPipeline(object):
 
     def open_spider(self, spider):
         global engine, Session
-        engine = create_engine('mysql+pymysql://housing:housing@101.132.154.2:3306/House_OnSale', encoding='utf-8', echo=False)
+        engine = create_engine('mysql+pymysql://housing:housing@101.132.154.2:3306/House_OnSale?charset=utf8', encoding='utf-8', echo=False)
         Session = sessionmaker(bind=engine)
         pass
 
