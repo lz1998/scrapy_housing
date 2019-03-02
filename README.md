@@ -14,7 +14,7 @@
 - `scrapyd` 启动[服务器](http://localhost:6800)，端口：6800
 - `curl http://localhost:6800/schedule.json -d project=default -d spider=lianjia_spider` 启动爬虫
 - `curl http://localhost:6800/cancel.json -d project=default -d job=jobid_responsed_by_server` 停止爬虫
-- `logparser` 用logparser来解析log文件，提供统计信息，在`./logs/`下会出现`stats.json`
+- `logparser` 用logparser来解析log文件，提供统计信息，在`./logs/`下会出现`stats.json`。 参考：[logparser](https://github.com/my8100/logparser)
 
 
 #### 使用scrapyweb
