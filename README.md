@@ -10,6 +10,7 @@
 - 打开`./scrapy.cfg`，去掉url前的注释
 - `pip install scrapyd` docs: [scrapyd](https://scrapyd.readthedocs.io/en/stable/overview.html)
 - `pip install scrapyd-client` docs: [scrapyd-client](https://github.com/scrapy/scrapyd-client)
+- `pip install python-scrapyd-api`
 - `scrapyd-deploy -l`
 - `scrapyd` 启动[服务器](http://localhost:6800)，端口：6800
 - `curl http://localhost:6800/schedule.json -d project=default -d spider=lianjia_spider` 启动爬虫
